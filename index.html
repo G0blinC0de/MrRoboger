@@ -9,13 +9,23 @@
 </head>
 
 <body>
-    <form class="container">
-        <label for="numInput"></label><br>
-        <input id="numInput" type="number" name="numInput">
-        <br>
-        <button type="submit">Determine Neighbor Status</button>
+
+
+    <form>
+        <div class="boxshadow">
+            <h1>Welcome to the Neighborhood</h1>
+            <p>Please input your number</p>
+            <label for="numInput"></label><br>
+            <input id="numInput" type="number" name="numInput">
+            <br>
+            <button type="submit">Determine Neighbor Status</button>
+        </div>
     </form>
 
+
+    <div id="resultBox" class="hidden">
+        <p id="resultP" class="boxshadow"></p>
+    </div>
     <script src="js/script.js"></script>
 </body>
 
