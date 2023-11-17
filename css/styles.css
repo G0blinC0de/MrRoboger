@@ -2,14 +2,15 @@
 
 body {
     font-family: "Allison";
+    background-color: bisque;
 }
 
 .boxshadow {
     box-shadow: 25px 25px 15px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
     border-radius: 100px;
-    padding: 20px;
-    margin: 25px;
+    padding: 50px;
+    margin: 50x;
     font-size: 50px;
     align-items: center;
     justify-content: center;
@@ -27,6 +28,13 @@ button {
     margin: 10px;
 }
 
+h1 {
+    background-image: url('../images/mrroger.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: bolder;
+}
 
 
 .hidden {
