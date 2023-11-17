@@ -1,8 +1,10 @@
-form {
-    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+input {
+    box-shadow: 25px 25px 15px 10px rgba(0, 0, 0, 0.5);
     text-align: left;
-    border-radius: 20px;
-
+    border-radius: 100px;
+    padding: 20px;
+    margin: 25px;
+    font-size: large;
 }
 
 .container {
