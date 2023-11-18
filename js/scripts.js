@@ -1,10 +1,6 @@
 // Testing Logic:
 
-let testInputs = [3, 5, 10];
-testInputs.forEach(function (inputNum) {
-    const result = processNum(inputNum);
-    console.log("Input Number:", inputNum, "Processed Output:", result);
-});
+
 
 
 
@@ -17,7 +13,7 @@ function processNum(inputNum) {
     return results.join(', ');
 };
 
-// Business Logic: Check and replace individual number
+// Business Logic: Check and replace individual number, prioritize higher num
 function numScan(number) {
     const numStr = number.toString();
     if (numStr.includes('3')) {
@@ -29,8 +25,20 @@ function numScan(number) {
     } else {
         return number;
     }
-
 }
 
 // UI Logic: 
 
+function updateResult(resultString) {
+    document.getElementById('resultP').innerText = resultString;
+}
+
+window.onload = function () {
+    document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const numInput = parseInt(document.getElementById('numInput').value);
+        const resultString = processNum(numInput);
+        updateResult(resultString);
+    });
+};

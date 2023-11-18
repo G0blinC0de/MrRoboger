@@ -21,13 +21,13 @@ A Digital Neighborhood
 
 _processNum();_
 
-Test: "It should return an array of numbers from 0 to the user's input numbers."
-Code: let testInputs = [3, 5, 10];
+Test: "It should return an array of numbers from 0 to the user's input numbers, after running them through numScan."
+Code: let testInputs = [10];
 testInputs.forEach(function (inputNum) {
     const result = processNum(inputNum);
     console.log("Input Number:", inputNum, "Processed Output:", result);
 });
-Expected Output: 
+Expected Output: 0, Beep, Boop, Won't you be my Neighbor?, 4, 5, 6, 7, 8, 9, Beep
 
 
 _numScan()_
@@ -38,7 +38,7 @@ testInputs.forEach(function(number) {
     var result = numScan(number);
     console.log("Input:", number, "Output:", result);
 });
-Expected Output: 0, Beep, Boop, Won't you be my Neighbor?
+Expected Output: Won't you be my Neighbor?
 
 Test: "It should replace numbers that contain a "2" with "Boop"
 Code: let testInputs = [2];
@@ -46,7 +46,7 @@ testInputs.forEach(function(number) {
     var result = numScan(number);
     console.log("Input:", number, "Output:", result);
 });
-Expected Output: 0, Beep, Boop
+Expected Output: Boop
 
 Test: "It should replace numbers that contain a "1" with "Beep"
 Code: let testInputs = [1];
@@ -54,10 +54,12 @@ testInputs.forEach(function(number) {
     var result = numScan(number);
     console.log("Input:", number, "Output:", result);
 });
-Expected Output: 0, Beep
+Expected Output: Beep
 
-
-
+_updateResult()_
+Test: "It should clear the previous entries upon a new input."
+Code: updateResult(0, 1);
+Expected Output: [0, "Beep"]
 
 
 
