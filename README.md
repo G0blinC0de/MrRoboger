@@ -39,6 +39,12 @@ Test: "It should replace numbers that contain a "1" with "Beep"
 Code: numScan(1)
 Expected Output: [0,"Beep"]
 
+_Test the function with various inputs_
+let testInputs = [0, 1, 2, 3, 4, 13, 21, 31, 42];
+testInputs.forEach(function(number) {
+    var result = numScan(number);
+    console.log("Input:", number, "Output:", result);
+});
 
 
 
