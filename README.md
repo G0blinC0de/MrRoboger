@@ -19,23 +19,27 @@ A Digital Neighborhood
 
 #### Tests
 
-_numScan()_
+_processNum();_
 
 Test: "It should return an array of numbers from 0 to the user's input numbers."
-Code: numScan(0);
+Code: processNum(0);
 Expected Output: [0]
 
+_numScan()_
+
 Test: "It should replace numbers that contain a "3" with "Won't you be my Neighbor?"
-Code: beepBoop(3)
+Code: numScan(3)
 Expected Output: [0, "Beep", "Boop", "Won't you be my Neighbor?"]
 
 Test: "It should replace numbers that contain a "2" with "Boop"
-Code: beepBoop(2)
+Code: numScan(2)
 Expected Output: [0, "Beep", "Boop"]
 
 Test: "It should replace numbers that contain a "1" with "Beep"
-Code: beepBoop(1)
+Code: numScan(1)
 Expected Output: [0,"Beep"]
+
+
 
 
 
