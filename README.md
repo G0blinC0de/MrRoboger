@@ -22,29 +22,42 @@ A Digital Neighborhood
 _processNum();_
 
 Test: "It should return an array of numbers from 0 to the user's input numbers."
-Code: processNum(0);
-Expected Output: [0]
+Code: let testInputs = [3, 5, 10];
+testInputs.forEach(function (inputNum) {
+    const result = processNum(inputNum);
+    console.log("Input Number:", inputNum, "Processed Output:", result);
+});
+Expected Output: 
+
 
 _numScan()_
 
 Test: "It should replace numbers that contain a "3" with "Won't you be my Neighbor?"
-Code: numScan(3)
-Expected Output: [0, "Beep", "Boop", "Won't you be my Neighbor?"]
-
-Test: "It should replace numbers that contain a "2" with "Boop"
-Code: numScan(2)
-Expected Output: [0, "Beep", "Boop"]
-
-Test: "It should replace numbers that contain a "1" with "Beep"
-Code: numScan(1)
-Expected Output: [0,"Beep"]
-
-_Test the function with various inputs_
-let testInputs = [0, 1, 2, 3, 4, 13, 21, 31, 42];
+Code: let testInputs = [3];
 testInputs.forEach(function(number) {
     var result = numScan(number);
     console.log("Input:", number, "Output:", result);
 });
+Expected Output: 0, Beep, Boop, Won't you be my Neighbor?
+
+Test: "It should replace numbers that contain a "2" with "Boop"
+Code: let testInputs = [2];
+testInputs.forEach(function(number) {
+    var result = numScan(number);
+    console.log("Input:", number, "Output:", result);
+});
+Expected Output: 0, Beep, Boop
+
+Test: "It should replace numbers that contain a "1" with "Beep"
+Code: let testInputs = [1];
+testInputs.forEach(function(number) {
+    var result = numScan(number);
+    console.log("Input:", number, "Output:", result);
+});
+Expected Output: 0, Beep
+
+
+
 
 
 
