@@ -1,10 +1,21 @@
-// Test the function with various inputs
-let testInputs = [0, 1, 2, 3, 4, 13, 21, 31, 42]; // Array of numbers to test
-testInputs.forEach(function (number) {
-    const result = numScan(number);
-    console.log("Input:", number, "Output:", result);
+// Testing Logic:
+
+let testInputs = [3, 5, 10];
+testInputs.forEach(function (inputNum) {
+    const result = processNum(inputNum);
+    console.log("Input Number:", inputNum, "Processed Output:", result);
 });
 
+
+
+// Business Logic: Process the input number, run numScan function, return result
+function processNum(inputNum) {
+    let results = [];
+    for (let i = 0; i <= inputNum; i++) {
+        results.push(numScan(i));
+    }
+    return results.join(', ');
+};
 
 // Business Logic: Check and replace individual number
 function numScan(number) {
