@@ -1,10 +1,7 @@
-// Testing Logic:
 
+// Business Logic: 
 
-
-
-
-// Business Logic: Process the input number, run numScan function, return result
+// Process the input number, run numScan function, return result
 function processNum(inputNum) {
     let results = [];
     for (let i = 0; i <= inputNum; i++) {
@@ -13,7 +10,7 @@ function processNum(inputNum) {
     return results.join(', ');
 };
 
-// Business Logic: Check and replace individual number, prioritize higher num
+// Check and replace individual number, prioritize higher num
 function numScan(number) {
     const numStr = number.toString();
     if (numStr.includes('3')) {
