@@ -40,3 +40,10 @@ h1 {
 h2 {
     font-size: 50px;
 }
+
+#movingImage {
+    position: fixed;
+    top: 215px;
+    left: 0;
+    transition: left 0.8s;
+}

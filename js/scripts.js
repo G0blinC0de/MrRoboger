@@ -3,7 +3,7 @@
 
 // Process the input number, run numScan function, return result
 function processNum(numInput) {
-    let results = [];
+    const results = [];
     for (let i = 0; i <= numInput; i++) {
         results.push(numScan(i));
     }
@@ -39,3 +39,29 @@ window.onload = function () {
         updateResult(resultString);
     });
 };
+
+window.addEventListener('scroll', function () {
+    const image = document.getElementById('movingImage');
+    const scrollValue = window.scrollY;
+    const windowWidth = window.innerWidth;
+    const imageWidth = image.offsetWidth;
+
+    // Calculate the maximum scroll position
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+    // Normalize the scroll position to a value between 0 and 1, 
+    // then scale it to increase the speed of movement
+    const scale = 4; // Adjust this value to control the speed
+    const normalizedScroll = (scrollValue / maxScroll) * scale;
+
+    // Use the sine function to create a back-and-forth motion
+    // Apply modulo to keep the value within the 0 to 2π range
+    const bounceValue = Math.sin(normalizedScroll % (2 * Math.PI));
+
+    // Calculate the new left position, ensuring the image stays within the viewport
+    const newLeftPosition = (windowWidth - imageWidth) * (bounceValue + 1) / 2;
+
+    console.log("New Left Position:", newLeftPosition); // Debugging line
+    image.style.left = `${newLeftPosition}px`;
+});
+
