@@ -2,9 +2,9 @@
 // Business Logic: 
 
 // Process the input number, run numScan function, return result
-function processNum(inputNum) {
+function processNum(numInput) {
     let results = [];
-    for (let i = 0; i <= inputNum; i++) {
+    for (let i = 0; i <= numInput; i++) {
         results.push(numScan(i));
     }
     return results.join(', ');
