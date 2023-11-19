@@ -21,7 +21,7 @@ A Digital Neighborhood
 
 Describe: processNum()
 
-Test: "It should return an array of numbers from 0 to the user's input numbers, after running them through numScan."
+Test: "It should return a string of numbers from 0 to the user's input numbers, after running them through numScan."
 Code: let testInputs = [10];
 testInputs.forEach(function (inputNum) {
     const result = processNum(inputNum);
