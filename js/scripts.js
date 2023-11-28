@@ -61,7 +61,6 @@ window.addEventListener('scroll', function () {
     // Calculate the new left position, ensuring the image stays within the viewport
     const newLeftPosition = (windowWidth - imageWidth) * (bounceValue + 1) / 2;
 
-    console.log("New Left Position:", newLeftPosition); // Debugging line
     image.style.left = `${newLeftPosition}px`;
 });
 

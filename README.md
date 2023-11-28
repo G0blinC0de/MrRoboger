@@ -59,7 +59,7 @@ Expected Output: Beep
 
 ## Setup/Installation Requirements
 
-* _Navigate to https://github.com/G0blinC0de/MrRoboger_
+* Navigate to https://github.com/G0blinC0de/MrRoboger
 * _Clone Repository and Download_
 * _Using Gitbash, navigate to cloned file in directory_
 * _Run in VS Code_
@@ -67,7 +67,7 @@ Expected Output: Beep
 
 Alternate Path
 * _Navigate to URL_
-* _https://g0blinc0de.github.io/MrRoboger/_
+* https://g0blinc0de.github.io/MrRoboger/
 
 
 
