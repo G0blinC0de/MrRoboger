@@ -8,7 +8,7 @@ function processNum(numInput) {
         results.push(numScan(i));
     }
     return results.join(', ');
-};
+}
 
 // Check and replace individual number, prioritize higher num
 function numScan(number) {
